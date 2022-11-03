@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'mixin';
+@import 'function';
+@include roboto;
+
+* {
+    @include reset;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 3px 15px;
+}
+h1,h2 {
+    font-weight: 400 ;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: map-get($set-colori, 'blu');
+    box-shadow: 3px 3px 3px orange;
+    border: $border;
+    border-radius: $border-radius;
+
+
+    ul {
+        @include clearLink;
+        @include list;
+        padding: 20px;
+
+        li {
+            padding: 5px;
+
+            a {
+                color: map-get($set-colori, 'white');
+                font-style: $font-style;
+                padding: 10px;
+                @include clearLink;
+            }
+        }
+    }
+
+}
+
+#main {
+ 
+    padding-top: 20px;
+    display: flex;
+    max-width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    article {
+        width: 70%;
+        h1,h2 {
+            line-height: 2em;
+        }
+        a {
+            color: map-get($set-colori, 'orange');
+            @include clearLink;
+            font-style: $font-style;
+        }
+
+    button {
+        background-color: map-get($set-colori, 'orange');
+        padding: 15px;
+        margin: 20px 2px;
+        border: 3px outset white;
+        color: white;
+    }
+    
+    }
+
+}
+
+aside {
+    
+    li {
+        @include clearLink;
+        border-bottom: 1px dashed grey;
+        width: 200px;
+        padding: 20px;
+        
+    }
+    li:hover {
+        background-color: map-get($set-colori, 'grey');
+    }
+}
+
+#footer {
+    background-color: map-get($set-colori, 'lightblue');
+    height: 150px;
+    margin-top: 40px;
+}
+ 
+blockquote {
+    padding-top: 10px;
+    padding-left: 40px;
+}
+footer {
+    padding: 20px 0px;
+}
+form {
+    margin-top: 20px;
+
+    fieldset {
+        padding: 10px;
+
+        input,textarea {
+            padding: 5px;
+            margin-top: 5px;
+        }
+    }
+}

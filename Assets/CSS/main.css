@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 3px 15px;
+}
+
+h1, h2 {
+  font-weight: 400;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: darkblue;
+  box-shadow: 3px 3px 3px orange;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+header ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  padding: 20px;
+}
+header ul li {
+  padding: 5px;
+}
+header ul li a {
+  color: white;
+  font-style: italic;
+  padding: 10px;
+  list-style: none;
+  text-decoration: none;
+}
+
+#main {
+  padding-top: 20px;
+  display: flex;
+  max-width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+#main article {
+  width: 70%;
+}
+#main article h1, #main article h2 {
+  line-height: 2em;
+}
+#main article a {
+  color: rgb(255, 115, 0);
+  list-style: none;
+  text-decoration: none;
+  font-style: italic;
+}
+#main article button {
+  background-color: rgb(255, 115, 0);
+  padding: 15px;
+  margin: 20px 2px;
+  border: 3px outset white;
+  color: white;
+}
+
+aside li {
+  list-style: none;
+  text-decoration: none;
+  border-bottom: 1px dashed grey;
+  width: 200px;
+  padding: 20px;
+}
+aside li:hover {
+  background-color: lightgrey;
+}
+
+#footer {
+  background-color: royalblue;
+  height: 150px;
+  margin-top: 40px;
+}
+
+blockquote {
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+footer {
+  padding: 20px 0px;
+}
+
+form {
+  margin-top: 20px;
+}
+form fieldset {
+  padding: 10px;
+}
+form fieldset input, form fieldset textarea {
+  padding: 5px;
+  margin-top: 5px;
+}/*# sourceMappingURL=main.css.map */
